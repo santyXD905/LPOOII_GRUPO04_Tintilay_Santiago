@@ -1,0 +1,19 @@
+﻿<Window x:Class="Vistas.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main" Height="350" Width="525">
+    <Grid>
+        <Menu Height="29" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" Width="503">
+            <MenuItem Header="Proveedores" Width="80" Height="30" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontStretch="SemiExpanded" FontWeight="Normal" FontStyle="Normal" Click="MenuItem_Click">
+            </MenuItem>
+            <MenuItem Header="Clientes" Width="80" Height="30" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontStretch="SemiExpanded" FontWeight="Normal" FontStyle="Normal" Click="MenuItem_Click_1">
+            </MenuItem>
+            <MenuItem Header="Productos" Width="80" Height="30" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontStretch="SemiExpanded" FontWeight="Normal" FontStyle="Normal">
+            </MenuItem>
+            <MenuItem Name="vendedorItem"  Header="Vendedores" Width="80" Height="30" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontStretch="SemiExpanded" FontWeight="Normal" FontStyle="Normal">
+            </MenuItem>        
+        </Menu>
+        
+        <Rectangle Height="201" HorizontalAlignment="Left" Margin="12,99,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="479" />
+    </Grid>
+</Window>

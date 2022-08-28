@@ -1,0 +1,6 @@
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\ClasesBase\bin\Debug\ClasesBase.pdb
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\ClasesBase\obj\Debug\ClasesBase.csproj.AssemblyReference.cache
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\ClasesBase\obj\Debug\ClasesBase.csproj.CoreCompileInputs.cache
