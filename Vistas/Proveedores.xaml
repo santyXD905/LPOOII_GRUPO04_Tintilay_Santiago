@@ -4,12 +4,14 @@
         Title="Proveedores" Height="289" Width="563">
     <Grid>
         <Button Content="nuevo" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="12,48,0,0" Name="btnNuevo" VerticalAlignment="Top" Width="50" Click="btnNuevo_Click" />
-        <Button Content="modificar" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="76,48,0,0" Name="btnModificar" VerticalAlignment="Top" Width="50" />
-        <Button Content="eliminar" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="139,48,0,0" Name="btnEliminar" VerticalAlignment="Top" Width="50" />
-        <Button Content="guardar" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="214,48,0,0" Name="btnGuardar" VerticalAlignment="Top" Width="50" Click="btnGuardar_Click" />
-        <Button Content="cancelar" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="270,48,0,0" Name="btnCancelar" VerticalAlignment="Top" Width="50" Click="btnCancelar_Click" />
-        <Button Content="anterior" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="362,48,0,0" Name="btnAnterior" VerticalAlignment="Top" Width="50" />
-        <Button Content="siguiente" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="428,48,0,0" Name="btnSiguiente" VerticalAlignment="Top" Width="50" />
+        <Button Content="modificar" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="68,48,0,0" Name="btnModificar" VerticalAlignment="Top" Width="50" />
+        <Button Content="eliminar" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="124,48,0,0" Name="btnEliminar" VerticalAlignment="Top" Width="50" />
+        <Button Content="guardar" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="189,48,0,0" Name="btnGuardar" VerticalAlignment="Top" Width="50" Click="btnGuardar_Click" />
+        <Button Content="cancelar" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="244,48,0,0" Name="btnCancelar" VerticalAlignment="Top" Width="50" Click="btnCancelar_Click" />
+        <Button Content="primero" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="314,48,0,0" Name="btnPrimero" VerticalAlignment="Top" Width="50" />
+        <Button Content="anterior" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="370,48,0,0" Name="btnAnterior" VerticalAlignment="Top" Width="50" />
+        <Button Content="siguiente" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="426,48,0,0" Name="btnSiguiente" VerticalAlignment="Top" Width="50" />
+        <Button Content="ultimo" FontSize="10" Height="23" HorizontalAlignment="Left" Margin="479,48,0,0" Name="btnUltimo" VerticalAlignment="Top" Width="50" />
         
         
         <Label Content="CUIT: " Height="28" HorizontalAlignment="Left" Margin="145,92,0,0" Name="label1" VerticalAlignment="Top" />

@@ -15,31 +15,31 @@ using ClasesBase;
 namespace Vistas
 {
     /// <summary>
-    /// Interaction logic for Clientes.xaml
+    /// Interaction logic for Productos.xaml
     /// </summary>
-    public partial class Clientes : Window
+    public partial class Productos : Window
     {
-        public Clientes()
+        public Productos()
         {
             InitializeComponent();
         }
 
-        //metodos para habilitar y deshabilitar elementos
-
         public void limpiar()
         {
-            txtDni.Text = string.Empty;
-            txtNombre.Text = string.Empty;
-            txtApellido.Text = string.Empty;
-            txtDireccion.Text = string.Empty;
+            txtCodigo.Text = string.Empty;
+            txtCategoria.Text = string.Empty;
+            txtColor.Text = string.Empty;
+            txtDescripcion.Text = string.Empty;
+            txtPrecio.Text = string.Empty;
         }
 
         public void habilitarText(bool estado)
         {
-            txtDni.IsEnabled = estado;
-            txtNombre.IsEnabled = estado;
-            txtApellido.IsEnabled = estado;
-            txtDireccion.IsEnabled = estado;
+            txtCodigo.IsEnabled = estado;
+            txtCategoria.IsEnabled = estado;
+            txtColor.IsEnabled = estado;
+            txtDescripcion.IsEnabled = estado;
+            txtPrecio.IsEnabled = estado;
         }
 
         public void habilitarGuarCanc(bool estado)
@@ -59,7 +59,6 @@ namespace Vistas
             btnUltimo.IsEnabled = estado;
         }
 
-        //metodos para manejar los botones
         private void btnNuevo_Click(object sender, RoutedEventArgs e)
         {
             limpiar();
@@ -70,22 +69,26 @@ namespace Vistas
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Guardar el cliente?", "Alta Cliente", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult result = MessageBox.Show("Guardar el producto?", "Alta Producto", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (result == MessageBoxResult.Yes)
             {
-                Cliente oCliente = new Cliente();
-                oCliente.Dni = txtDni.Text;
-                oCliente.Nombre = txtNombre.Text;
-                oCliente.Apellido = txtApellido.Text;
-                oCliente.Direccion = txtDireccion.Text;
-                MessageBox.Show("DNI: " + oCliente.Dni + "\nNombre: " + oCliente.Nombre + "\nApellido: " + oCliente.Apellido + "\nDireccion: " + oCliente.Direccion);
+                Producto oProducto = new Producto();
+                oProducto.CodProducto = txtCodigo.Text;
+                oProducto.Categoria = txtCategoria.Text;
+                oProducto.Color = txtColor.Text;
+                oProducto.Descripcion = txtDescripcion.Text;
+                decimal number;
+                if (Decimal.TryParse(txtPrecio.Text, out number))
+                    oProducto.Precio = decimal.Parse(txtPrecio.Text);
+                else
+                    oProducto.Precio = 0.0M;
+                MessageBox.Show("Codigo: " + oProducto.CodProducto + "\nCategoria: " + oProducto.Categoria + "\nColor: " + oProducto.Color + "\nDescripcion: " + oProducto.Descripcion + "\nPrecio: " + oProducto.Precio);
                 habilitarText(false);
                 habilitarGuarCanc(false);
                 habilitarABM(true);
 
             }
-            
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
@@ -100,8 +103,5 @@ namespace Vistas
         {
             this.Close();
         }
-
-
-
     }
 }

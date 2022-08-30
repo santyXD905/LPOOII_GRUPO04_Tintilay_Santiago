@@ -53,7 +53,8 @@ namespace Vistas
             btnEliminar.IsEnabled = estado;
             btnAnterior.IsEnabled = estado;
             btnSiguiente.IsEnabled = estado;
-        
+            btnPrimero.IsEnabled = estado;
+            btnUltimo.IsEnabled = estado;
         }
 
         private void btnNuevo_Click(object sender, RoutedEventArgs e)

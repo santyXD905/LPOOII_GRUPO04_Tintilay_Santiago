@@ -60,8 +60,14 @@
     <Compile Include="Clientes.xaml.cs">
       <DependentUpon>Clientes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Productos.xaml.cs">
+      <DependentUpon>Productos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Proveedores.xaml.cs">
       <DependentUpon>Proveedores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vendedores.xaml.cs">
+      <DependentUpon>Vendedores.xaml</DependentUpon>
     </Compile>
     <Page Include="Clientes.xaml">
       <SubType>Designer</SubType>
@@ -86,7 +92,15 @@
       <DependentUpon>Main.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Productos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Proveedores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vendedores.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
