@@ -8,9 +8,9 @@
             </MenuItem>
             <MenuItem Header="Clientes" Width="80" Height="30" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontStretch="SemiExpanded" FontWeight="Normal" FontStyle="Normal" Click="MenuItem_Click_1">
             </MenuItem>
-            <MenuItem Header="Productos" Width="80" Height="30" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontStretch="SemiExpanded" FontWeight="Normal" FontStyle="Normal">
+            <MenuItem Header="Productos" Width="80" Height="30" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontStretch="SemiExpanded" FontWeight="Normal" FontStyle="Normal" Click="MenuItem_Click_2">
             </MenuItem>
-            <MenuItem Name="vendedorItem"  Header="Vendedores" Width="80" Height="30" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontStretch="SemiExpanded" FontWeight="Normal" FontStyle="Normal">
+            <MenuItem Name="vendedorItem"  Header="Vendedores" Width="80" Height="30" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontStretch="SemiExpanded" FontWeight="Normal" FontStyle="Normal" Click="vendedorItem_Click">
             </MenuItem>        
         </Menu>
         
