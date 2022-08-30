@@ -27,6 +27,8 @@ namespace Vistas
 
         public Window proveedores;
         public Window clientes;
+        public Window productos;
+        public Window vendedores;
         public Window actual;
 
         public Main()
@@ -55,6 +57,22 @@ namespace Vistas
             if (actual != null) actual.Close();
             clientes = new Clientes();
             actual = clientes;
+            actual.Show();
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            if (actual != null) actual.Close();
+            productos = new Productos();
+            actual = productos;
+            actual.Show();
+        }
+
+        private void vendedorItem_Click(object sender, RoutedEventArgs e)
+        {
+            if (actual != null) actual.Close();
+            vendedores = new Vendedores();
+            actual = vendedores;
             actual.Show();
         }
 

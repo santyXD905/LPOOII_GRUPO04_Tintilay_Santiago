@@ -15,31 +15,27 @@ using ClasesBase;
 namespace Vistas
 {
     /// <summary>
-    /// Interaction logic for Clientes.xaml
+    /// Interaction logic for Vendedores.xaml
     /// </summary>
-    public partial class Clientes : Window
+    public partial class Vendedores : Window
     {
-        public Clientes()
+        public Vendedores()
         {
             InitializeComponent();
         }
 
-        //metodos para habilitar y deshabilitar elementos
-
         public void limpiar()
         {
-            txtDni.Text = string.Empty;
+            txtLegajo.Text = string.Empty;
             txtNombre.Text = string.Empty;
             txtApellido.Text = string.Empty;
-            txtDireccion.Text = string.Empty;
         }
 
         public void habilitarText(bool estado)
         {
-            txtDni.IsEnabled = estado;
+            txtLegajo.IsEnabled = estado;
             txtNombre.IsEnabled = estado;
             txtApellido.IsEnabled = estado;
-            txtDireccion.IsEnabled = estado;
         }
 
         public void habilitarGuarCanc(bool estado)
@@ -59,7 +55,6 @@ namespace Vistas
             btnUltimo.IsEnabled = estado;
         }
 
-        //metodos para manejar los botones
         private void btnNuevo_Click(object sender, RoutedEventArgs e)
         {
             limpiar();
@@ -70,22 +65,20 @@ namespace Vistas
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Guardar el cliente?", "Alta Cliente", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult result = MessageBox.Show("Guardar el vendedor?", "Alta Vendedor", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (result == MessageBoxResult.Yes)
             {
-                Cliente oCliente = new Cliente();
-                oCliente.Dni = txtDni.Text;
-                oCliente.Nombre = txtNombre.Text;
-                oCliente.Apellido = txtApellido.Text;
-                oCliente.Direccion = txtDireccion.Text;
-                MessageBox.Show("DNI: " + oCliente.Dni + "\nNombre: " + oCliente.Nombre + "\nApellido: " + oCliente.Apellido + "\nDireccion: " + oCliente.Direccion);
+                Vendedor oVendedor = new Vendedor();
+                oVendedor.Apellido = txtApellido.Text;
+                oVendedor.Nombre = txtNombre.Text;
+                oVendedor.Legajo = txtLegajo.Text;
+                MessageBox.Show("Legajo: " + oVendedor.Legajo + "\nApellido: " + oVendedor.Apellido + "\nNombre: " + oVendedor.Nombre);
                 habilitarText(false);
                 habilitarGuarCanc(false);
                 habilitarABM(true);
 
             }
-            
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
@@ -100,8 +93,5 @@ namespace Vistas
         {
             this.Close();
         }
-
-
-
     }
 }
