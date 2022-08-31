@@ -10,243 +10,250 @@
         >
     <Border CornerRadius="10" BorderThickness="0">
         <Border.Background>
-            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                <GradientStop Color="#17141F" Offset="0"></GradientStop>
-                <GradientStop Color="#171531" Offset="0.55"></GradientStop>
-            </LinearGradientBrush>
+            <ImageBrush ImageSource="/Recursos/fondo.jpg"
+                        Stretch="None"/>
         </Border.Background>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30"></RowDefinition>
-                <RowDefinition Height="400"></RowDefinition>
-            </Grid.RowDefinitions>
-
+        <Border CornerRadius="10" BorderThickness="0">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0"  Opacity=".7">
+                    <GradientStop Color="#17141F" Offset="0"></GradientStop>
+                    <GradientStop Color="#171531" Offset="0.55"></GradientStop>
+                </LinearGradientBrush>
+            </Border.Background>
             <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="30"/>
-                    <ColumnDefinition Width="27"/>
-                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="400"></RowDefinition>
+                </Grid.RowDefinitions>
 
-                <TextBlock Text="Login"
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="27"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Login"
+                               Foreground="DarkGray"
+                               FontSize="20"
+                               FontFamily="Montserrat"
+                               Grid.Column="0"
+                               VerticalAlignment="Center"
+                               Margin="20,0,0,0"/>
+
+                    <Button x:Name="btnMinimize"
+                            BorderThickness="0"
+                            Grid.Column="1"
+                            Content="-"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left"
+                            Foreground="White"
+                            Margin="0,0,0,0"
+                            FontSize="20"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Click="btnMinimize_Click">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#278BEF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="25"
+                                        Height="25"
+                                        CornerRadius="12"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="btnClose"
+                            BorderThickness="0"
+                            Grid.Column="2"
+                            Content="x"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left"
+                            Foreground="White"
+                            Margin="0,0,0,0"
+                            FontSize="20"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Click="btnClose_Click">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#DA34AE"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#C62DAE"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="25"
+                                        Height="25"
+                                        CornerRadius="12"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                </Grid>
+
+                <Grid x:Name="bienvenida"
+                      Grid.Row="1"
+                      Opacity="0" Margin="0,20,0,-20"
+                      >
+                    <TextBlock Text="Bienvenido "
+                               x:Name="txtBienvenida"
+                               Foreground="White"
+                               FontFamily="Montserrat"
+                               FontSize="50"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               FontWeight="Bold"
+                               />
+                </Grid>
+
+                <StackPanel x:Name="stackPanel"
+                            Width="250"
+                            Grid.Row="1"
+                            Orientation="Vertical"
+                            Margin="0,35,0,0">
+
+                    <TextBlock Text="Iniciar Sesion"
+                               Foreground="White"
+                               FontSize="30"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center"
+                               />
+
+                    <TextBlock Text="*Usuario y/o Contraseña incorrectos"
+                               x:Name="txtError"
+                               Foreground="Red"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center"
+                               Opacity="0"
+                               />
+
+                    <Label Content="Nombre de Usuario:"
+                           Name="lblUsuario" 
                            Foreground="DarkGray"
-                           FontSize="20"
-                           FontFamily="Montserrat"
-                           Grid.Column="0"
-                           VerticalAlignment="Center"
-                           Margin="20,0,0,0"/>
-
-                <Button x:Name="btnMinimize"
-                        BorderThickness="0"
-                        Grid.Column="1"
-                        Content="-"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Left"
-                        Foreground="White"
-                        Margin="0,0,0,0"
-                        FontSize="20"
-                        FontFamily="Montserrat"
-                        Cursor="Hand"
-                        Click="btnMinimize_Click">
-
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#278BEF"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="25"
-                                    Height="25"
-                                    CornerRadius="12"
-                                    Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-
-                <Button x:Name="btnClose"
-                        BorderThickness="0"
-                        Grid.Column="2"
-                        Content="x"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Left"
-                        Foreground="White"
-                        Margin="0,0,0,0"
-                        FontSize="20"
-                        FontFamily="Montserrat"
-                        Cursor="Hand"
-                        Click="btnClose_Click">
-
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="#DA34AE"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#C62DAE"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="25"
-                                    Height="25"
-                                    CornerRadius="12"
-                                    Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-
-            </Grid>
-
-            <Grid x:Name="bienvenida"
-                  Grid.Row="1"
-                  Opacity="0" Margin="0,20,0,-20"
-                  >
-                <TextBlock Text="Bienvenido "
-                           x:Name="txtBienvenida"
-                           Foreground="White"
-                           FontFamily="Montserrat"
-                           FontSize="50"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="Center"
-                           FontWeight="Bold"
-                           />
-            </Grid>
-
-            <StackPanel x:Name="stackPanel"
-                        Width="250"
-                        Grid.Row="1"
-                        Orientation="Vertical"
-                        Margin="0,35,0,0">
-
-                <TextBlock Text="Iniciar Sesion"
-                           Foreground="White"
-                           FontSize="30"
+                           FontSize="15"
                            FontWeight="Medium"
                            FontFamily="Montserrat"
-                           HorizontalAlignment="Center"
-                           />
+                           HorizontalAlignment="Left"
+                           Margin="0,30,0,0"/>
 
-                <TextBlock Text="*Usuario y/o Contraseña incorrectos"
-                           x:Name="txtError"
-                           Foreground="Red"
-                           FontSize="12"
+                    <TextBox x:Name="txtUser"
+                             FontSize="14"
+                             FontWeight="Medium"
+                             FontFamily="Montserrat"
+                             Foreground="White"
+                             CaretBrush="LightGray"
+                             BorderBrush="DarkGray"
+                             BorderThickness="0,0,0,2"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="30,0,0,0"
+                             >
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="/Recursos/user.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"
+                                        />
+                        </TextBox.Background>
+                    </TextBox>
+
+                    <Label Content="Contraseña: "
+                           Name="lblContrasenia"
+                           Foreground="DarkGray"
+                           FontSize="15"
                            FontWeight="Medium"
                            FontFamily="Montserrat"
-                           HorizontalAlignment="Center"
-                           Opacity="0"
-                           />
+                           HorizontalAlignment="Left"
+                           Margin="0,30,0,0"/>
 
-                <Label Content="Nombre de Usuario:"
-                       Name="lblUsuario" 
-                       Foreground="DarkGray"
-                       FontSize="15"
-                       FontWeight="Medium"
-                       FontFamily="Montserrat"
-                       HorizontalAlignment="Left"
-                       Margin="0,30,0,0"/>
+                    <PasswordBox x:Name="txtPass"
+                            FontSize="14"
+                            FontWeight="Medium"
+                            FontFamily="Montserrat"
+                            Foreground="White"
+                            CaretBrush="LightGray"
+                            BorderBrush="DarkGray"
+                            BorderThickness="0,0,0,2"
+                            Height="28"
+                            VerticalContentAlignment="Center"
+                            Margin="0,5,0,0"
+                            Padding="30,0,0,0" InputScope="Password"
+                            >
+                        <PasswordBox.Background>
+                            <ImageBrush ImageSource="/Recursos/password.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"
+                                        />
+                        </PasswordBox.Background>
+                    </PasswordBox>
 
-                <TextBox x:Name="txtUser"
-                         FontSize="14"
-                         FontWeight="Medium"
-                         FontFamily="Montserrat"
-                         Foreground="White"
-                         CaretBrush="LightGray"
-                         BorderBrush="DarkGray"
-                         BorderThickness="0,0,0,2"
-                         Height="28"
-                         VerticalContentAlignment="Center"
-                         Margin="0,5,0,0"
-                         Padding="30,0,0,0"
-                         >
-                    <TextBox.Background>
-                        <ImageBrush ImageSource="/Recursos/user.png"
-                                    Stretch="Uniform"
-                                    AlignmentX="Left"
-                                    />
-                    </TextBox.Background>
-                </TextBox>
+                    <Button x:Name="btnLogin"
+                            BorderThickness="0"
+                            Content="Iniciar Sesion"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Foreground="White"
+                            Margin="0,50,0,0"
+                            FontSize="20"
+                            FontFamily="Montserrat"
+                            Cursor="Hand" Click="btnLoguin">
 
-                <Label Content="Contraseña: "
-                       Name="lblContrasenia"
-                       Foreground="DarkGray"
-                       FontSize="15"
-                       FontWeight="Medium"
-                       FontFamily="Montserrat"
-                       HorizontalAlignment="Left"
-                       Margin="0,30,0,0"/>
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#28AEED"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#1B4C79"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
 
-                <PasswordBox x:Name="txtPass"
-                        FontSize="14"
-                        FontWeight="Medium"
-                        FontFamily="Montserrat"
-                        Foreground="White"
-                        CaretBrush="LightGray"
-                        BorderBrush="DarkGray"
-                        BorderThickness="0,0,0,2"
-                        Height="28"
-                        VerticalContentAlignment="Center"
-                        Margin="0,5,0,0"
-                        Padding="30,0,0,0" InputScope="Password"
-                        >
-                    <PasswordBox.Background>
-                        <ImageBrush ImageSource="/Recursos/password.png"
-                                    Stretch="Uniform"
-                                    AlignmentX="Left"
-                                    />
-                    </PasswordBox.Background>
-                </PasswordBox>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="150"
+                                        Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
 
-                <Button x:Name="btnLogin"
-                        BorderThickness="0"
-                        Content="Iniciar Sesion"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Center"
-                        Foreground="White"
-                        Margin="0,50,0,0"
-                        FontSize="20"
-                        FontFamily="Montserrat"
-                        Cursor="Hand" Click="btnLoguin">
+                </StackPanel>
 
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="#28AEED"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#1B4C79"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="150"
-                                    Height="40"
-                                    CornerRadius="20"
-                                    Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-
-            </StackPanel>
-
-        </Grid>
+            </Grid>
+        </Border>
     </Border>
+    
 </Window>
