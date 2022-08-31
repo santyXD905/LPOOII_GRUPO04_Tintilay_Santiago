@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -30,7 +32,7 @@ namespace Vistas
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void btnLoguin(object sender, RoutedEventArgs e)
         {
             usuario admin, vendedor;
             admin.user = "santy";
@@ -38,14 +40,15 @@ namespace Vistas
             vendedor.user = "mayko";
             vendedor.pass = "mayko";
 
-            if(txtUser.Text == admin.user && txtPass.Text == admin.pass || txtUser.Text == vendedor.user && txtPass.Text == vendedor.pass)
+            if (txtUser.Text == admin.user && txtPass.Password.ToString() == admin.pass || txtUser.Text == vendedor.user && txtPass.Password.ToString() == vendedor.pass)
             {
-                MessageBox.Show("Bienvenido "+txtUser.Text);
                 Main main = new Main();
                 if (txtUser.Text == admin.user)
-                    main.userLog.tipoUsuer = "admin";   
+                    main.userLog.tipoUsuer = "admin";
                 else
                     main.userLog.tipoUsuer = "vendedor";
+
+                MessageBox.Show("Bienvenido " + txtUser.Text.ToString());
 
                 main.validar();
                 main.Show();
@@ -53,11 +56,28 @@ namespace Vistas
             }
             else
             {
-                MessageBox.Show("usuario y/o contraseña incorrectos");
+                txtUser.Text = "";
+                txtPass.Password = "";
+                txtError.Opacity = 100;
             }
+        }
 
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
 
-            
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState=WindowState.Minimized;
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
         }
     }
 }

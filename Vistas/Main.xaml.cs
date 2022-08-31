@@ -39,11 +39,11 @@ namespace Vistas
         public void validar()
         {
            if (userLog.tipoUsuer == "vendedor")
-               vendedorItem.Visibility = Visibility.Collapsed;
+               VendedorItem.Visibility = Visibility.Collapsed;
         }
 
         //botones para cambiar de gestion 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void ProveedoresItem_Click(object sender, RoutedEventArgs e)
         {
             if (actual != null) actual.Close();
             proveedores = new Proveedores();
@@ -52,7 +52,7 @@ namespace Vistas
         }
 
 
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        private void ClientesItem_Click(object sender, RoutedEventArgs e)
         {
             if (actual != null) actual.Close();
             clientes = new Clientes();
@@ -60,7 +60,7 @@ namespace Vistas
             actual.Show();
         }
 
-        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        private void ProductosItem_Click(object sender, RoutedEventArgs e)
         {
             if (actual != null) actual.Close();
             productos = new Productos();
@@ -68,7 +68,7 @@ namespace Vistas
             actual.Show();
         }
 
-        private void vendedorItem_Click(object sender, RoutedEventArgs e)
+        private void VendedorItem_Click(object sender, RoutedEventArgs e)
         {
             if (actual != null) actual.Close();
             vendedores = new Vendedores();
@@ -76,6 +76,14 @@ namespace Vistas
             actual.Show();
         }
 
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
+        }
 
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
     }
 }
