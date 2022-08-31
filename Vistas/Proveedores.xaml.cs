@@ -97,5 +97,10 @@ namespace Vistas
         {
             this.Close();
         }
+
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
     }
 }
