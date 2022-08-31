@@ -135,7 +135,9 @@
       <Name>ClasesBase</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Recursos\fondo.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Recursos\password.png" />
     <Resource Include="Recursos\user.png" />
