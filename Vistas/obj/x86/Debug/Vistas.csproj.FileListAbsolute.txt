@@ -93,3 +93,6 @@ C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vis
 C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.g.resources
 C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
 C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\App.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\ResourceDictionaries\LoginDictionary.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\ResourceDictionaries\AllDictionary.baml

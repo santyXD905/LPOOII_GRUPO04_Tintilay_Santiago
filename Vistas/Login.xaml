@@ -23,7 +23,7 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"></RowDefinition>
-                    <RowDefinition Height="400"></RowDefinition>
+                    <RowDefinition Height="420"></RowDefinition>
                 </Grid.RowDefinitions>
 
                 <Grid>
@@ -42,81 +42,22 @@
                                Margin="20,0,0,0"/>
 
                     <Button x:Name="btnMinimize"
-                            BorderThickness="0"
+                            Style="{StaticResource MinimizeButton}"
                             Grid.Column="1"
                             Content="-"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Left"
-                            Foreground="White"
-                            Margin="0,0,0,0"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
                             Click="btnMinimize_Click">
-
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <Setter Property="Background" Value="Transparent"/>
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#278BEF"/>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Button.Style>
-
-                        <Button.Template>
-                            <ControlTemplate TargetType="Button">
-                                <Border Width="25"
-                                        Height="25"
-                                        CornerRadius="12"
-                                        Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
                     </Button>
 
                     <Button x:Name="btnClose"
-                            BorderThickness="0"
+                            Style="{StaticResource CloseButton}"
                             Grid.Column="2"
                             Content="x"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Left"
-                            Foreground="White"
-                            Margin="0,0,0,0"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
                             Click="btnClose_Click">
-
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <Setter Property="Background" Value="#DA34AE"/>
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#C62DAE"/>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Button.Style>
-                        <Button.Template>
-                            <ControlTemplate TargetType="Button">
-                                <Border Width="25"
-                                        Height="25"
-                                        CornerRadius="12"
-                                        Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
                     </Button>
 
                 </Grid>
 
-                <Grid x:Name="bienvenida"
+                <!-- <Grid x:Name="bienvenida"
                       Grid.Row="1"
                       Opacity="0" Margin="0,20,0,-20"
                       >
@@ -129,7 +70,7 @@
                                HorizontalAlignment="Center"
                                FontWeight="Bold"
                                />
-                </Grid>
+                </Grid>-->
 
                 <StackPanel x:Name="stackPanel"
                             Width="250"
@@ -157,103 +98,28 @@
 
                     <Label Content="Nombre de Usuario:"
                            Name="lblUsuario" 
-                           Foreground="DarkGray"
-                           FontSize="15"
-                           FontWeight="Medium"
-                           FontFamily="Montserrat"
-                           HorizontalAlignment="Left"
-                           Margin="0,30,0,0"/>
+                           Style="{StaticResource LabelStyle}"/>
 
                     <TextBox x:Name="txtUser"
-                             FontSize="14"
-                             FontWeight="Medium"
-                             FontFamily="Montserrat"
-                             Foreground="White"
-                             CaretBrush="LightGray"
-                             BorderBrush="DarkGray"
-                             BorderThickness="0,0,0,2"
-                             Height="28"
-                             VerticalContentAlignment="Center"
-                             Margin="0,5,0,0"
-                             Padding="30,0,0,0"
-                             >
-                        <TextBox.Background>
-                            <ImageBrush ImageSource="/Recursos/user.png"
-                                        Stretch="Uniform"
-                                        AlignmentX="Left"
-                                        />
-                        </TextBox.Background>
-                    </TextBox>
+                             Style="{StaticResource InputStyle}"/>
 
                     <Label Content="Contraseña: "
                            Name="lblContrasenia"
-                           Foreground="DarkGray"
-                           FontSize="15"
-                           FontWeight="Medium"
-                           FontFamily="Montserrat"
-                           HorizontalAlignment="Left"
-                           Margin="0,30,0,0"/>
+                           Style="{StaticResource LabelStyle}"/>
 
                     <PasswordBox x:Name="txtPass"
-                            FontSize="14"
-                            FontWeight="Medium"
-                            FontFamily="Montserrat"
-                            Foreground="White"
-                            CaretBrush="LightGray"
-                            BorderBrush="DarkGray"
-                            BorderThickness="0,0,0,2"
-                            Height="28"
-                            VerticalContentAlignment="Center"
-                            Margin="0,5,0,0"
-                            Padding="30,0,0,0" InputScope="Password"
-                            >
-                        <PasswordBox.Background>
-                            <ImageBrush ImageSource="/Recursos/password.png"
-                                        Stretch="Uniform"
-                                        AlignmentX="Left"
-                                        />
-                        </PasswordBox.Background>
+                                 Style="{StaticResource PasswordStyle}">
                     </PasswordBox>
 
                     <Button x:Name="btnLogin"
-                            BorderThickness="0"
+                            Style="{StaticResource ButtonSubmit}"
                             Content="Iniciar Sesion"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Foreground="White"
-                            Margin="0,50,0,0"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand" Click="btnLoguin">
-
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <Setter Property="Background" Value="#28AEED"/>
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#1B4C79"/>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Button.Style>
-
-                        <Button.Template>
-                            <ControlTemplate TargetType="Button">
-                                <Border Width="150"
-                                        Height="40"
-                                        CornerRadius="20"
-                                        Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                            Click="btnLoguin">
                     </Button>
 
                 </StackPanel>
-
+                <Control Grid.Row="1" HorizontalAlignment="Left" Margin="716,173,0,0" Name="control1" VerticalAlignment="Top" />
             </Grid>
         </Border>
     </Border>
-    
 </Window>
