@@ -7,6 +7,7 @@
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
         AllowsTransparency="True"
+        xmlns:Login="clr-namespace:Vistas.UserControls"
         >
     <Border CornerRadius="10" BorderThickness="0">
         <Border.Background>
@@ -57,26 +58,11 @@
 
                 </Grid>
 
-                <!-- <Grid x:Name="bienvenida"
-                      Grid.Row="1"
-                      Opacity="0" Margin="0,20,0,-20"
-                      >
-                    <TextBlock Text="Bienvenido "
-                               x:Name="txtBienvenida"
-                               Foreground="White"
-                               FontFamily="Montserrat"
-                               FontSize="50"
-                               VerticalAlignment="Center"
-                               HorizontalAlignment="Center"
-                               FontWeight="Bold"
-                               />
-                </Grid>-->
-
                 <StackPanel x:Name="stackPanel"
                             Width="250"
                             Grid.Row="1"
                             Orientation="Vertical"
-                            Margin="0,35,0,0">
+                            Margin="0,35,0,43">
 
                     <TextBlock Text="Iniciar Sesion"
                                Foreground="White"
@@ -96,26 +82,20 @@
                                Opacity="0"
                                />
 
-                    <Label Content="Nombre de Usuario:"
-                           Name="lblUsuario" 
-                           Style="{StaticResource LabelStyle}"/>
+                    <!--<Login:Label Content="Nombre de Usuario:"></Login:Label>-->
+                    <Label Content="Nombre de Usuario:" Name="lblUsuario" Style="{StaticResource LabelStyle}"/>
 
-                    <TextBox x:Name="txtUser"
-                             Style="{StaticResource InputStyle}"/>
+                    <!--<Login:TextBox></Login:TextBox>-->
+                    <TextBox x:Name="txtUser" Style="{StaticResource InputStyle}"/>
+                    
+                    <!--<Login:Label Content="Contraseña:"></Login:Label>-->
+                    <Label Content="Contraseña:" Name="lblContrasenia" Style="{StaticResource LabelStyle}"/>
 
-                    <Label Content="Contraseña: "
-                           Name="lblContrasenia"
-                           Style="{StaticResource LabelStyle}"/>
+                    <PasswordBox x:Name="txtPass" Style="{StaticResource PasswordStyle}"/>
+                    <!--<Login:PasswordBox></Login:PasswordBox>-->
 
-                    <PasswordBox x:Name="txtPass"
-                                 Style="{StaticResource PasswordStyle}">
-                    </PasswordBox>
-
-                    <Button x:Name="btnLogin"
-                            Style="{StaticResource ButtonSubmit}"
-                            Content="Iniciar Sesion"
-                            Click="btnLoguin">
-                    </Button>
+                    <Button x:Name="btnLogin" Content="Iniciar Sesion" Style="{StaticResource ButtonSubmit}" Click="btnLoguin"/>
+                    <!--<Login:Button Content="Iniciar Sesion"></Login:Button>-->
 
                 </StackPanel>
                 <Control Grid.Row="1" HorizontalAlignment="Left" Margin="716,173,0,0" Name="control1" VerticalAlignment="Top" />
