@@ -38,76 +38,17 @@
                         Margin="20,0,0,0"/>
 
                 <Button x:Name="btnMinimize"
-                        BorderThickness="0"
-                        Grid.Column="1"
-                        Content="-"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Left"
-                        Foreground="White"
-                        Margin="0,0,0,0"
-                        FontSize="20"
-                        FontFamily="Montserrat"
-                        Cursor="Hand"
-                        Click="btnMinimize_Click">
-
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#278BEF"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="25"
-                                    Height="25"
-                                    CornerRadius="12"
-                                    Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
+                            Style="{StaticResource MinimizeButton}"
+                            Grid.Column="1"
+                            Content="-"
+                            Click="btnMinimize_Click">
                 </Button>
 
                 <Button x:Name="btnClose"
-                        BorderThickness="0"
-                        Grid.Column="2"
-                        Content="x"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Left"
-                        Foreground="White"
-                        Margin="0,0,0,0"
-                        FontSize="20"
-                        FontFamily="Montserrat"
-                        Cursor="Hand"
-                        Click="btnSalir_Click">
-
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="#DA34AE"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#C62DAE"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="25"
-                                    Height="25"
-                                    CornerRadius="12"
-                                    Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
+                            Style="{StaticResource CloseButton}"
+                            Grid.Column="2"
+                            Content="x"
+                            Click="btnSalir_Click">
                 </Button>
             </Grid>
             <Grid Grid.Row="1">
@@ -125,270 +66,48 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Button Grid.Column="0"
-                        Foreground="White" 
-                        Content="Nuevo" 
-                        FontSize="16"
-                        Height="25"
-                        HorizontalAlignment="Center"
+                        Style="{StaticResource DangerButton}"
                         Name="btnNuevo" 
-                        VerticalAlignment="Center"
-                        Click="btnNuevo_Click" >
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="Red"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                        Content="Nuevo"
+                        Click="btnNuevo_Click"/>
                 <Button Grid.Column="1"
-                        Foreground="White" 
-                        Content="Modificar"
-                        FontSize="16" 
-                        Height="25" 
-                        HorizontalAlignment="Center"
+                        Style="{StaticResource DangerButton}"
                         Name="btnModificar"
-                        VerticalAlignment="Center">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="Red"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                        Content="Modificar"/>
                 <Button Grid.Column="2" 
-                        Foreground="White"
-                        Content="Eliminar"
-                        FontSize="16" Height="25"
-                        HorizontalAlignment="Center" 
+                        Style="{StaticResource DangerButton}"
                         Name="btnEliminar" 
-                        VerticalAlignment="Center">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="Red"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                        Content="Eliminar"/>
 
                 <Button Grid.Column="4" 
-                        Foreground="White"
-                        Content="Guardar"
-                        FontSize="16" Height="25"
-                        HorizontalAlignment="Center"
+                        Style="{StaticResource PrimaryButton}"
                         Name="btnGuardar"
-                        VerticalAlignment="Center"
-                        Click="btnGuardar_Click">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#278BEF"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                        Content="Guardar"
+                        Click="btnGuardar_Click"/>
                 <Button Grid.Column="5" 
-                        Foreground="White" 
-                        Content="Cancelar" 
-                        FontSize="16" 
-                        Height="25"
-                        HorizontalAlignment="Center"
+                        Style="{StaticResource PrimaryButton}"
                         Name="btnCancelar"
-                        VerticalAlignment="Center"
-                        Click="btnCancelar_Click">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#278BEF"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                        Content="Cancelar"
+                        Click="btnCancelar_Click"/>
 
                 <Button Grid.Column="7"
-                        Foreground="White" 
-                        Content="Primero" 
-                        FontSize="16" 
-                        Height="25" 
-                        HorizontalAlignment="Center" 
-                        Name="btnPrimero"
-                        VerticalAlignment="Center">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#4AA00D"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                        Style="{StaticResource SuccessButton}"
+                        Content="Primero"
+                        Name="btnPrimero"/>
                 <Button Grid.Column="8"
-                        Foreground="White" 
+                        Style="{StaticResource SuccessButton}"
                         Content="Anterior" 
-                        FontSize="16" 
-                        Height="25" 
-                        HorizontalAlignment="Center" 
-                        Name="btnAnterior"
-                        VerticalAlignment="Center">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#4AA00D"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                        Name="btnAnterior"/>
                 <Button Grid.Column="9" 
-                        Foreground="White"
+                        Style="{StaticResource SuccessButton}"
                         Content="Siguiente"
-                        FontSize="16"
-                        Height="25"
-                        HorizontalAlignment="Center" 
-                        Name="btnSiguiente" 
-                        VerticalAlignment="Center">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#4AA00D"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-                <Button Grid.Column="10" 
-                        Foreground="White"
+                        Name="btnSiguiente"/>
+                <Button Grid.Column="10"
+                        Style="{StaticResource SuccessButton}"
                         Content="Ultimo"
-                        FontSize="16"
-                        Height="25"
-                        HorizontalAlignment="Center" 
-                        Name="btnUltimo"
-                        VerticalAlignment="Center">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#4AA00D"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                        Name="btnUltimo"/>
             </Grid>
+            
             <Grid Grid.Row="2"
                   VerticalAlignment="Center">
                 <Grid.ColumnDefinitions>
@@ -398,106 +117,37 @@
                 <StackPanel Grid.Column="0"
                             VerticalAlignment="Stretch"
                             HorizontalAlignment="Right">
-                    <Label Content="DNI: "
-                           Foreground="White" 
-                           FontSize="15"
-                           FontWeight="Medium"
-                           FontFamily="Montserrat"
-                           Height="30" Width="100"
-                           HorizontalAlignment="Right"
+                    <Label Content="DNI:"
                            x:Name="lblDni"
-                           VerticalAlignment="Center" />
-                    <Label Content="Nombre: " 
-                           Foreground="White" 
-                           FontSize="15"
-                           FontWeight="Medium"
-                           FontFamily="Montserrat"
-                           Height="30" Width="100"
-                           HorizontalAlignment="Right"
-                           x:Name="lblNombre" 
-                           VerticalAlignment="Center" />
-                    <Label Content="Apellido: " 
-                           Foreground="White" 
-                           FontSize="15"
-                           FontWeight="Medium"
-                           FontFamily="Montserrat"
-                           Height="30"  Width="100"
-                           HorizontalAlignment="Right" 
+                           Style="{StaticResource LabelForm}"/>
+                    <Label Content="Nombre: "
+                           x:Name="lblNombre"
+                           Style="{StaticResource LabelForm}"/>
+                    <Label Content="Apellido:" 
                            x:Name="lblApellido" 
-                           VerticalAlignment="Center" />
-                    <Label Content="Direccion: " 
-                           Foreground="White"
-                           FontSize="15"
-                           FontWeight="Medium"
-                           FontFamily="Montserrat"
-                           Height="30"  Width="100"
-                           HorizontalAlignment="Right" 
+                           Style="{StaticResource LabelForm}"/>
+                    <Label Content="Direccion:" 
                            x:Name="lblDireccion"
-                           VerticalAlignment="Center" />
+                           Style="{StaticResource LabelForm}"/>
                 </StackPanel>
                 <StackPanel Grid.Column="1"
                             VerticalAlignment="Stretch"
                             HorizontalAlignment="Left">
-                    <TextBox Height="20" 
-                             HorizontalAlignment="Left"
-                             x:Name="txtDni" 
-                             VerticalAlignment="Top"
-                             Margin="0,5"
-                             Width="120" />
-                    <TextBox Height="20"
-                             HorizontalAlignment="Left" 
-                             x:Name="txtNombre" 
-                             VerticalAlignment="Top" 
-                             Margin="0,5"
-                             Width="120" />
-                    <TextBox Height="20"
-                             HorizontalAlignment="Left"
-                             x:Name="txtApellido" 
-                             VerticalAlignment="Top" 
-                             Margin="0,5"
-                             Width="120" />
-                    <TextBox Height="20"
-                             HorizontalAlignment="Left" 
-                             x:Name="txtDireccion"
-                             VerticalAlignment="Top" 
-                             Margin="0,5"
-                             Width="120" />
+                    <TextBox x:Name="txtDni"
+                             Style="{StaticResource InputForm}"/>
+                    <TextBox x:Name="txtNombre"
+                             Style="{StaticResource InputForm}"/>
+                    <TextBox x:Name="txtApellido"
+                             Style="{StaticResource InputForm}"/>
+                    <TextBox x:Name="txtDireccion"
+                             Style="{StaticResource InputForm}"/>
                 </StackPanel>
             </Grid>
             <Button Grid.Row="3"
                     Content="Salir"
                     x:Name="btnSalir"
-                    Height="25" Width="100"
-                    FontFamily="Montserrat"
-                    FontSize="15"
-                    FontWeight="Medium"
-                    Foreground="White"
-                    BorderBrush="Transparent"
-                    BorderThickness="0"
-                    Margin="0,0,5,0"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Top"
+                    Style="{StaticResource ButtonSalir}"
                     Click="btnSalir_Click">
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="Red"/>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#850000"/>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="8"
-                                Background="{TemplateBinding Background}">
-                            <ContentPresenter VerticalAlignment="Center"
-                                              HorizontalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
             </Button>
         </Grid>
     </Border>
