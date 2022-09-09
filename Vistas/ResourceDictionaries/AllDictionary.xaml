@@ -1,26 +1,16 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="using:Vistas">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Estilos.xaml"/>
+        <ResourceDictionary Source="Plantillas.xaml"/>
+        <ResourceDictionary Source="Desencadenadores.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
     
-    <Style TargetType="{x:Type Button}" x:Key="DangerButton">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="FontSize" Value="16"/>
-        <Setter Property="Height" Value="25"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="FontFamily" Value="Montserrat"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                        <ContentPresenter VerticalAlignment="Center"
-                                          HorizontalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+    <!-- Buttons Options -->
+    <Style TargetType="{x:Type Button}" x:Key="DangerButton" BasedOn="{StaticResource EstiloDangerButton}">
+        <Setter Property="Template" Value="{StaticResource PlantillaBtnDanger}"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="Red"/>
@@ -30,27 +20,9 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    
-    <Style TargetType="{x:Type Button}" x:Key="PrimaryButton">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="FontSize" Value="16"/>
-        <Setter Property="Height" Value="25"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="FontFamily" Value="Montserrat"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                        <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+
+    <Style TargetType="{x:Type Button}" x:Key="PrimaryButton" BasedOn="{StaticResource EstiloPrimaryButton}">
+        <Setter Property="Template" Value="{StaticResource PlantillaBtnPrimary}"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="#278BEF"/>
@@ -60,27 +32,9 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    
-    <Style TargetType="{x:Type Button}" x:Key="SuccessButton">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="FontSize" Value="16"/>
-        <Setter Property="Height" Value="25"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="FontFamily" Value="Montserrat"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border CornerRadius="12.5"
-                                    Background="{TemplateBinding Background}"
-                                    Padding="5,0">
-                        <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+
+    <Style TargetType="{x:Type Button}" x:Key="SuccessButton" BasedOn="{StaticResource EstiloSuccessButton}">
+        <Setter Property="Template" Value="{StaticResource PlantillaBtnSuccess}"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="#4AA00D"/>
@@ -90,31 +44,9 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    
-    <Style TargetType="{x:Type Button}" x:Key="ButtonSalir">
-        <Setter Property="Height" Value="25"/>
-        <Setter Property="Width" Value="100"/>
-        <Setter Property="FontFamily" Value="Montserrat"/>
-        <Setter Property="FontSize" Value="15"/>
-        <Setter Property="FontWeight" Value="Medium"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="Background" Value="Red"/>
-        <Setter Property="BorderBrush" Value="Transparent"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Margin" Value="0,0,5,0"/>
-        <Setter Property="HorizontalAlignment" Value="Right"/>
-        <Setter Property="VerticalAlignment" Value="Top"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Border CornerRadius="8"
-                            Background="{TemplateBinding Background}">
-                        <ContentPresenter VerticalAlignment="Center"
-                                          HorizontalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+
+    <Style TargetType="{x:Type Button}" x:Key="ButtonSalir" BasedOn="{StaticResource EstiloButtonSalir}">
+        <Setter Property="Template" Value="{StaticResource PlantillaButtonSalir}"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="#850000"/>
@@ -122,29 +54,11 @@
         </Style.Triggers>
     </Style>
     
-    <Style TargetType="{x:Type Button}" x:Key="MinimizeButton">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="FontSize" Value="20"/>
-        <Setter Property="FontFamily" Value="Montserrat"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="HorizontalAlignment" Value="Left"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="Cursor" Value="Hand"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Width="25"
-                            Height="25"
-                            CornerRadius="12"
-                            Background="{TemplateBinding Background}">
-                        <ContentPresenter VerticalAlignment="Center"
-                                          HorizontalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+    
+    <!-- Buttons Header -->
+    
+    <Style TargetType="{x:Type Button}" x:Key="MinimizeButton" BasedOn="{StaticResource EstiloMinimizeButton}">
+        <Setter Property="Template" Value="{StaticResource PlantillaHeaderButton}"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="#278BEF"/>
@@ -152,29 +66,8 @@
         </Style.Triggers>
     </Style>
 
-    <Style TargetType="{x:Type Button}" x:Key="CloseButton">
-        <Setter Property="Background" Value="#DA34AE"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="FontSize" Value="20"/>
-        <Setter Property="FontFamily" Value="Montserrat"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="HorizontalAlignment" Value="Left"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Margin" Value="0"/>
-        <Setter Property="Cursor" Value="Hand"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Width="25"
-                            Height="25"
-                            CornerRadius="12"
-                            Background="{TemplateBinding Background}">
-                        <ContentPresenter VerticalAlignment="Center"
-                                          HorizontalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+    <Style TargetType="{x:Type Button}" x:Key="CloseButton" BasedOn="{StaticResource EstiloCloseButton}">
+        <Setter Property="Template" Value="{StaticResource PlantillaHeaderButton}"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="#C62DAE"/>
@@ -182,29 +75,28 @@
         </Style.Triggers>
     </Style>
     
-    <Style TargetType="{x:Type TextBox}" x:Key="InputForm">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="FontWeight" Value="Medium"/>
-        <Setter Property="FontFamily" Value="Montserrat"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="CaretBrush" Value="LightGray"/>
-        <Setter Property="BorderBrush" Value="DarkGray"/>
-        <Setter Property="BorderThickness" Value="0,0,0,2"/>
-        <Setter Property="Height" Value="20"/>
-        <Setter Property="Width" Value="120"/>
-        <Setter Property="VerticalContentAlignment" Value="Top"/>
-        <Setter Property="Margin" Value="0,5"/>
-    </Style>
+    <!-- Input Form -->
+
+    <Style TargetType="{x:Type TextBox}" x:Key="InputForm" BasedOn="{StaticResource EstiloInputForm}"/>
     
-    <Style TargetType="{x:Type Label}" x:Key="LabelForm">
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="FontSize" Value="15"/>
-        <Setter Property="FontWeight" Value="Medium"/>
-        <Setter Property="FontFamily" Value="Montserrat"/>
-        <Setter Property="Height" Value="30"/>
-        <Setter Property="Width" Value="100"/>
-        <Setter Property="HorizontalAlignment" Value="Right"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
+    <Style TargetType="{x:Type Label}" x:Key="LabelForm" BasedOn="{StaticResource EstiloLabelForm}"/>
+
+    
+    <!-- Login Form -->
+
+    <Style TargetType="{x:Type PasswordBox}" x:Key="PasswordLogin" BasedOn="{StaticResource EstiloPasswordLogin}"/>
+    
+    <Style TargetType="{x:Type TextBox}" x:Key="InputLogin" BasedOn="{StaticResource EstiloInputLogin}"/>
+
+    <Style TargetType="{x:Type Label}" x:Key="LabelLogin" BasedOn="{StaticResource EstiloLabelLogin}"/>
+
+    <Style TargetType="{x:Type Button}" x:Key="ButtonSubmit" BasedOn="{StaticResource EstiloButtonSubmitLogin}">
+        <Setter Property="Template" Value="{StaticResource PlantillaButtonSubmitLogin}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#1B4C79"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
+
 </ResourceDictionary>
