@@ -2,77 +2,37 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="using:Vistas">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="Estilos.xaml"/>
         <ResourceDictionary Source="Plantillas.xaml"/>
         <ResourceDictionary Source="Desencadenadores.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     
     <!-- Buttons Options -->
-    <Style TargetType="{x:Type Button}" x:Key="DangerButton" BasedOn="{StaticResource EstiloDangerButton}">
+    <Style TargetType="{x:Type Button}" x:Key="DangerButton" BasedOn="{StaticResource TriggerDangerButton}">
         <Setter Property="Template" Value="{StaticResource PlantillaBtnDanger}"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="Red"/>
-                <Setter Property="Height" Value="28"/>
-                <Setter Property="Padding" Value="5,0,5,0"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
-    <Style TargetType="{x:Type Button}" x:Key="PrimaryButton" BasedOn="{StaticResource EstiloPrimaryButton}">
+    <Style TargetType="{x:Type Button}" x:Key="PrimaryButton" BasedOn="{StaticResource TriggerPrimaryButton}">
         <Setter Property="Template" Value="{StaticResource PlantillaBtnPrimary}"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#278BEF"/>
-                <Setter Property="Height" Value="28"/>
-                <Setter Property="Padding" Value="5,0,5,0"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
-    <Style TargetType="{x:Type Button}" x:Key="SuccessButton" BasedOn="{StaticResource EstiloSuccessButton}">
+    <Style TargetType="{x:Type Button}" x:Key="SuccessButton" BasedOn="{StaticResource TriggerSuccessButton}">
         <Setter Property="Template" Value="{StaticResource PlantillaBtnSuccess}"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#4AA00D"/>
-                <Setter Property="Height" Value="28"/>
-                <Setter Property="Padding" Value="5,0,5,0"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
-    <Style TargetType="{x:Type Button}" x:Key="ButtonSalir" BasedOn="{StaticResource EstiloButtonSalir}">
+    <Style TargetType="{x:Type Button}" x:Key="ButtonSalir" BasedOn="{StaticResource TriggerButtonSalir}">
         <Setter Property="Template" Value="{StaticResource PlantillaButtonSalir}"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#850000"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
     
     
     <!-- Buttons Header -->
-    
-    <Style TargetType="{x:Type Button}" x:Key="MinimizeButton" BasedOn="{StaticResource EstiloMinimizeButton}">
+
+    <Style TargetType="{x:Type Button}" x:Key="MinimizeButton" BasedOn="{StaticResource TriggerMinimizeButton}">
         <Setter Property="Template" Value="{StaticResource PlantillaHeaderButton}"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#278BEF"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
-    <Style TargetType="{x:Type Button}" x:Key="CloseButton" BasedOn="{StaticResource EstiloCloseButton}">
+    <Style TargetType="{x:Type Button}" x:Key="CloseButton" BasedOn="{StaticResource TriggerCloseButton}">
         <Setter Property="Template" Value="{StaticResource PlantillaHeaderButton}"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#C62DAE"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
     
     <!-- Input Form -->
@@ -90,13 +50,8 @@
 
     <Style TargetType="{x:Type Label}" x:Key="LabelLogin" BasedOn="{StaticResource EstiloLabelLogin}"/>
 
-    <Style TargetType="{x:Type Button}" x:Key="ButtonSubmit" BasedOn="{StaticResource EstiloButtonSubmitLogin}">
+    <Style TargetType="{x:Type Button}" x:Key="ButtonSubmit" BasedOn="{StaticResource TriggerButtonSubmitLogin}">
         <Setter Property="Template" Value="{StaticResource PlantillaButtonSubmitLogin}"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#1B4C79"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
 </ResourceDictionary>
