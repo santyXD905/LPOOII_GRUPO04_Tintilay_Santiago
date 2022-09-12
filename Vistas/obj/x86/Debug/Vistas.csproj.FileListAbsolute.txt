@@ -1,0 +1,144 @@
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Login.baml
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\bin\Debug\Vistas.exe
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\bin\Debug\Vistas.pdb
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Main.baml
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Main.g.cs
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Proveedores.baml
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Proveedores.g.cs
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Clientes.baml
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Clientes.g.cs
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Vistas.csproj.AssemblyReference.cache
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\santi\Desktop\escuela 2\Lpoo 2\proyectos vs 2010\LPOOII_GRUPO04\Vistas\obj\x86\Debug\Vistas.csproj.CopyComplete
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\bin\Debug\Vistas.exe
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\bin\Debug\Vistas.pdb
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Clientes.baml
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Login.baml
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Main.baml
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Productos.baml
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Proveedores.baml
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vendedores.baml
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Clientes.g.cs
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Main.g.cs
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Productos.g.cs
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Proveedores.g.cs
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vendedores.g.cs
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\admin\Videos\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\bin\Debug\Vistas.exe
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\bin\Debug\Vistas.pdb
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Clientes.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Login.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Main.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Productos.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Proveedores.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vendedores.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Clientes.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Main.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Productos.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Proveedores.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vendedores.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\bin\Debug\Vistas.exe
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\bin\Debug\Vistas.pdb
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Clientes.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Login.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Main.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Productos.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Proveedores.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vendedores.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Clientes.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Main.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Productos.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Proveedores.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vendedores.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\App.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\ResourceDictionaries\AllDictionary.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\ResourceDictionaries\Desencadenadores.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\ResourceDictionaries\Estilos.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\ResourceDictionaries\Plantillas.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\UserControls\Button.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\UserControls\Label.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\UserControls\PasswordBox.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\UserControls\TextBox.baml
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\UserControls\Button.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\UserControls\Label.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\UserControls\PasswordBox.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\UserControls\TextBox.g.cs
+C:\Users\Samas\Desktop\LPOOII_GRUPO04_Tintilay_Santiago\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\bin\Debug\Vistas.exe
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\bin\Debug\Vistas.pdb
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Clientes.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Main.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Productos.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Proveedores.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\ResourceDictionaries\AllDictionary.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\ResourceDictionaries\Desencadenadores.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\ResourceDictionaries\Estilos.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\ResourceDictionaries\Plantillas.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vendedores.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\App.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Clientes.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Login.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Main.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Productos.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Proveedores.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vendedores.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\App.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas_MarkupCompile.cache
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas_MarkupCompile.lref
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Login.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.g.resources
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\NuevoLogin.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\UserControls\UserControl1.baml
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\UserControls\UserControl1.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Santiago\Downloads\LPOOII_GRUPO04_Tintilay_Santiago-main\Vistas\obj\x86\Debug\NuevoLogin.baml
