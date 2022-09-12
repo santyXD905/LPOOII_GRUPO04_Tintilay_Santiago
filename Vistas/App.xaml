@@ -3,11 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="Login.xaml">
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/ResourceDictionaries/AllDictionary.xaml"/>
-                <ResourceDictionary Source="/ResourceDictionaries/LoginDictionary.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        <ResourceDictionary Source="/ResourceDictionaries/AllDictionary.xaml"/>
     </Application.Resources>
 </Application>

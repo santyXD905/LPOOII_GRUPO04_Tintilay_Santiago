@@ -83,15 +83,15 @@
                                />
 
                     <!--<Login:Label Content="Nombre de Usuario:"></Login:Label>-->
-                    <Label Content="Nombre de Usuario:" Name="lblUsuario" Style="{StaticResource LabelStyle}"/>
+                    <Label Content="Nombre de Usuario:" Name="lblUsuario" Style="{StaticResource LabelLogin}"/>
 
                     <!--<Login:TextBox></Login:TextBox>-->
-                    <TextBox x:Name="txtUser" Style="{StaticResource InputStyle}"/>
+                    <TextBox x:Name="txtUser" Style="{StaticResource InputLogin}"/>
                     
                     <!--<Login:Label Content="Contraseña:"></Login:Label>-->
-                    <Label Content="Contraseña:" Name="lblContrasenia" Style="{StaticResource LabelStyle}"/>
+                    <Label Content="Contraseña:" Name="lblContrasenia" Style="{StaticResource LabelLogin}"/>
 
-                    <PasswordBox x:Name="txtPass" Style="{StaticResource PasswordStyle}"/>
+                    <PasswordBox x:Name="txtPass" Style="{StaticResource PasswordLogin}"/>
                     <!--<Login:PasswordBox></Login:PasswordBox>-->
 
                     <Button x:Name="btnLogin" Content="Iniciar Sesion" Style="{StaticResource ButtonSubmit}" Click="btnLoguin"/>
